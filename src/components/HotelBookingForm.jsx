@@ -129,7 +129,7 @@ export const HotelBookingForm = () => {
 							defaultValue={currentUser.phoneNumber}
 							{...register('phoneNumber', {
 								required: true,
-								minLength: 11,
+								minLength: 10,
 								maxLength: 20,
 								onChange: (e) => {
 									if (e.target.value.trim() !== '') {
@@ -147,7 +147,7 @@ export const HotelBookingForm = () => {
 						/>
 						{phoneTouched && errors?.phoneNumber?.type !== 'required' && <p className='font-weight text-danger mt-1 mb-0'>Phone Number is required</p>}
 						{errors?.phoneNumber?.type === 'required' && <p className='font-weight text-danger mt-1 mb-0'>Phone Number is required</p>}
-						{errors?.phoneNumber?.type === 'minLength' && <p className='font-weight text-danger mt-1 mb-0'>Phone Number must contain at least 11 Number</p>}
+						{errors?.phoneNumber?.type === 'minLength' && <p className='font-weight text-danger mt-1 mb-0'>Phone Number must contain at least 10 Number</p>}
 						{errors?.phoneNumber?.type === 'maxLength' && <p className='font-weight text-danger mt-1 mb-0'>Phone Number must contain maximum 20 Number</p>}
 					</Form.Group>
 				</Form>

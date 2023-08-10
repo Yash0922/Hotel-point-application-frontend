@@ -19,11 +19,11 @@ export const Footer = () => {
 					<ul>
 						<li className='d-flex align-items-center justify-content-start'>
 							<HiLocationMarker />
-							<span className='ms-2 fs-4'>Alexandria, Egypt.</span>
+							<span className='ms-2 fs-4'>Delhi,India.</span>
 						</li>
 						<li className='d-flex align-items-center justify-content-start'>
 							<HiOutlinePhone />
-							<span className='ms-2 fs-4'>+20 1090 2923 06</span>
+							<span className='ms-2 fs-4'>+91 7678364306</span>
 						</li>
 						<li className='d-flex align-items-center justify-content-start'>
 							<HiOutlineMail />

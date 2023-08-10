@@ -20,7 +20,7 @@ export const ModalsControllerContextProvider = ({ children }) => {
 
     useEffect(() => {
         // Make an API request to fetch hotel data
-        axios.get('http://localhost:8080/allData') // Replace with your actual API endpoint
+        axios.get('https://hotel-point-application-backend.vercel.app/allData') // Replace with your actual API endpoint
             .then(response => {
                 setHotelsData(response.data.Visitors);
             })
